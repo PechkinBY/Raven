@@ -1,0 +1,10 @@
+@media screen and (max-width : 800px) {
+    .comments {
+        &__header {
+            align-items: center;
+        }
+        &__item {
+            margin-left: 0;
+        }
+    }
+}

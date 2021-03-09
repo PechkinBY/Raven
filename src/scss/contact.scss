@@ -1,0 +1,77 @@
+.contact {
+    display: flex;
+    margin-top: 77px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 57%;
+    }
+
+    &__field {
+        border: 1px solid $grey;
+        border-radius: 3px;
+        padding: 18px 40px;
+        margin-bottom: 7px;
+        font-size: 14px;
+        color: $grey;
+    }            
+
+    &__message {
+        height: 180px;
+        resize: vertical;
+        font-family: $o-reg;
+    }
+
+    &__submit {
+        width: 108px;
+        margin-top: 4px;
+        align-self: flex-end;
+        background-color: $purple;
+
+        &:hover {
+            border: 1px solid $purple;
+            background-color: #fff;
+            color: $purple;
+        }
+    }
+
+    &__title {
+        color: $purple;
+        font-family: $o-bold;
+        font-size: 22px;
+        margin-bottom: 38px;
+    }
+
+    &__info {
+        color: $grey;
+        font-size: 14px;
+        flex-shrink: 9;
+        margin-left: 33px;
+
+        &-text {
+            text-align: justify;
+            line-height: 21px;
+        }
+        &-subtitle {
+            font-family: $o-bold;
+            margin-top: 52px;
+        }
+        &-adress {
+            margin-top: 11px;
+        }
+        &-requisite {
+            color: $grey;
+            display: block;
+            margin-top: 11px;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.map-contact-page {
+    margin-top: 101px;
+}

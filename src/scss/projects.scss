@@ -1,0 +1,37 @@
+.wr-projects-page {
+    background-color: transparent;
+    padding-top: 0;
+    .projects {
+        &-nav {
+            width: 100%;
+            margin-bottom: 43px;
+            display: flex;
+            justify-content: center;
+            
+            &__btn {
+                width: auto;
+                height: auto;
+                padding: 16px 26px;
+                border-color: $purple;
+                background-color: $purple;
+                color: #fff;
+                margin-right: 8px;
+                
+                &-active {
+                    color: $purple;
+                    background-color: #fff;
+                }
+                &:hover {
+                    background-color: #fff;
+                    color: $purple;
+                }
+            }
+        }
+        &__item {
+            height: 293px;
+        }
+        .active {
+            height: 100vh;
+        }
+    }
+}

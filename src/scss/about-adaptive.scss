@@ -1,0 +1,99 @@
+@media screen and (max-width : 1200px) {
+    .wr-team .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__item {
+            width: 26%;
+            margin-top: 10px;
+
+            &-img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width : 1198px) {
+    .wr-about-owner {
+        .owner {
+            &-info__text {
+                font-size: 13px;
+            }
+            &-info__title {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 1120px) {
+    .wr-advantages .advantages {
+        justify-content: space-evenly;
+
+        &-item {
+            width: 200px;
+            padding: 40px 0;
+        }
+    }
+}
+@media screen and (max-width : 850px) {
+    .wr-about-owner {
+        .owner {
+            padding-bottom: 30px;
+            
+            &-img {
+                display: none;
+            }
+            &-info {
+                margin-left: 0;
+
+                &__text {
+                    text-align: center;
+                }
+                &__title {
+                    text-align: center;
+    
+                    &::after {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                &__name {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .wr-advantages .advantages {
+        flex-wrap: wrap;
+
+        &-item {
+            width: 49%;
+            padding: 20px 0;
+            margin-top: 5px;
+        }
+    }
+    .wr-testimonials .slider-item__wr-img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .wr-advantages .advantages {
+        justify-content: space-evenly;
+
+        &-item {
+            &__img {
+                height: 25px;
+            }
+            &__title {
+                font-size: 11px;
+            }
+        }
+    }
+    .wr-team .team {
+        &__item {
+            width: 48%;
+        }
+    }
+}

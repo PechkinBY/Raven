@@ -1,0 +1,12 @@
+@media screen and (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+
+        &__form {
+            width: 100%;
+        }
+        &__info {
+            margin-left: 0;
+        }
+    }
+}

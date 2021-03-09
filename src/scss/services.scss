@@ -1,0 +1,83 @@
+.wr-services-services-page {
+    .services {
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+        }        
+        &__item{
+            width: 571px;
+            margin-left: 0;
+            padding: 60px 30px;
+
+            &:hover .services__text{
+                color: #fff;
+            }
+        }
+        &__title {
+            letter-spacing: .7px;
+        }
+        &__img {
+            height: 48px;
+        }
+        &__text {
+            margin-top: 23px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.wr-advantages-services-page {
+    background-image: url("../img/1-page/intro/intro-bg.jpg");
+    padding-top: 0;
+    padding-bottom: 80px;
+    background-size: cover;
+    
+    .section-title {
+        color: #fff;
+        padding-top: 77px;
+        margin-top: 70px;
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+    .section-text {
+        color: #fff;
+    }
+    .advantages-item {
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 3px;
+
+        &__title {
+            margin-top: 20px;
+        }
+
+        &:hover {
+            background-color: #fff;
+        }
+        &:hover .advantages-item__title{
+            color: $grey;
+        }
+        &:hover .advantages-item__img{
+            fill: $grey;
+        }
+    }
+}
+
+.wr-projects-slider {
+
+    .swiper-slide {
+        flex-shrink: 0;
+    }
+
+    .slider-item__wr-img {
+        width: 180px;
+        height: 220px;
+    }
+}
+
+.map-services {
+    margin-top: 140px;
+}

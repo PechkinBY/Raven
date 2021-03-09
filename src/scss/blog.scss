@@ -1,0 +1,190 @@
+.wr-blog {
+    .container {
+        display: flex;
+    }
+}
+
+.blog {
+    width: 870px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__date {
+        font-size: 11px;
+        color: #fff;
+        background-color: $purple;
+        border-radius: 3px;
+        width: 62px;
+        height: 68px;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &-value {
+            font-family: $o-semi;
+            font-size: 27px;
+            width: 100%;
+            text-align: center;
+        }
+        &_small {
+            display: flex;
+        }
+    }
+
+    &__wr-main {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            display: block;
+            background-color: $grey;
+            margin: 45px 0;
+        }
+    }
+    &__wr-img {
+        border-radius: 3px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &__content {
+        color: $grey;
+        font-size: 11px;        
+        &-title {
+            color: $purple;
+            font-family: $o-bold;
+            font-size: 22px;
+            margin-top: 32px;
+        }
+        &-info {
+            display: flex;
+            margin: 17px 0;
+
+            &-item {
+                margin-right: 10px;
+                display: flex;
+                &::after{
+                    content: "";
+                    background-color: $grey;
+                    width: 1px;
+                    height: 100%;
+                    display: block;
+                    margin-left: 10px;
+                }
+            }
+        }    
+        &-date_small {
+            display: flex;
+        }
+
+        &-text {
+            color: $grey;
+            font-size: 14px;
+            letter-spacing: -.05px;
+            line-height: 23px;
+            margin-top: 22px;
+        }
+    }
+    &__btn {
+        background-color: $purple;
+        border-color: $purple;
+        width: 110px;
+        height: 38px;
+        margin-top: 45px;
+    }
+    .pages__nav {
+        margin-left: 70px;
+    }
+}
+
+.side-bar {
+    max-width: 272px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    &__item-titel {
+        color: $dark-grey;
+        font-size: 16px;
+    }
+
+    &__search {
+        border: 1px solid $grey;
+        border-radius: 3px;
+        padding: 20px 30px;
+        color: $grey;
+    }
+    .categories {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+    
+        &__link{
+            color: $grey;
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 15px 0;
+            padding-bottom: 0;
+            transition: .2s;
+
+            &::after {
+                content: "";
+                height: 2px;
+                width: 100%;
+                display: block;
+                margin-top: 15px;
+                background-color: $light-grey;
+            }
+            
+            span {
+                font-size: 18px;
+                margin-right: 24px;
+            }
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+    .tweets {
+        margin-top: 70px;
+        &__item {
+            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &-img {
+                width: 20px;
+                color: $light-grey;
+            }
+
+            &-text{
+                font-size: 14px;
+                color: $grey;
+                width: 225px;
+                line-height: 20px;
+                text-align: justify;
+                span {
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@media screen and (max-width : 1120px) {
+    .menu {
+        &__burger {
+            display: flex;
+        }
+        &__nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            transform: translateY(-100%);
+            width: 100%;
+            height: 100vh;
+            background-color: $dark-grey;
+            
+            flex-direction: column;
+            justify-content: center;
+            z-index: 100;
+            transition: .3s linear;
+            
+            &_active {
+                transform: translateY(0);
+
+                & ~ .menu__burger {
+                    position: fixed;
+                    right: 15px;
+                }
+            }
+        }
+        &__item {
+            font-size: 25px;
+            margin-left: 0;
+            margin-top: 1px;
+
+            &:hover {
+                background-color: transparent;
+            }
+            &:active {
+                .menu__link {
+                    color: $purple;
+                }
+            }
+        }
+        &__link {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.375" height="33.62" viewBox="0 0 38.375 33.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #99286b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Storage_box" data-name="Storage box" class="cls-1" d="M839.2,1268.6H800.8v-14.4h38.4v14.4Zm-36-2.4h33.6v-9.6H803.2v9.6Zm32.4,21.6H804.4v-18h2.4v15.6h26.4v-15.6h2.4v18Zm-6-9.6H810.4V1271h2.4v4.8h14.4V1271h2.4v7.2Z" transform="translate(-800.813 -1254.19)"/>
+</svg>

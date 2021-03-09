@@ -1,0 +1,140 @@
+.shop-menu {
+    display: flex;
+
+    &__item {
+        cursor: pointer;
+        height: 45px;
+        border: 1px solid $light-grey;
+        color: $grey;
+        font-size: 13px;
+        letter-spacing: 0.03em;
+        padding-left: 15px;
+        margin-right: 10px;
+        border-radius: 3px;
+
+        &:first-child {
+            width: 150px;
+        }
+        &:nth-child(2) {
+            width: 185px;
+        }
+
+        &-view {
+            width: 54px;
+            padding-left: 0;
+            background-color: $light-grey;
+            
+            display: flex;
+            justify-content: center;
+
+            &-img {
+                width: 20px;
+            }
+
+            &:hover {
+                background-color: $grey;
+            }
+            &:hover .shop-menu__item-view-img {
+                color: $light-grey;
+            }
+        }
+    }
+}
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 51px;
+    
+    &__wr-img {
+        height: 216px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &__img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    &__info {
+        background-color: $purple;
+        padding: 18px 28px 14px 28px;
+        margin-top: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-title {
+            letter-spacing: -0.05em;
+            width: 100%;
+        }
+        &-price {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .cart-ico {
+            margin-right: 0;
+        }
+    }
+
+    &__item {
+        width: 23%;
+        border: 1px solid $light-grey;
+        border-radius: 3px;
+        color: #fff;
+        margin-bottom: 35px;
+        cursor: pointer;
+
+        .cart-ico:hover {
+            transform: scale(1.1);
+        }
+        &:hover {
+            opacity: .7;
+        }
+
+        &_wide {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border: none;
+
+            .shop__wr-img {
+                width: 30%;
+                height: 100px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+            .shop__img {
+                width: auto;
+            }
+            .shop__info {
+                color: $purple;
+                background-color: transparent;
+                flex-grow: 2;
+                margin-top: 0;     
+                display: flex;
+                align-items: center;          
+
+                .shop__info-title {
+                    width: auto;
+                    font-size: 30px;
+                }
+                .shop__info-price {
+                    margin: 0 10px 0 auto;
+                    font-size: 30px;
+                }
+                .cart-ico {
+                    color: $purple;
+                }
+            }
+        }
+
+        &_hide {
+            display: none;
+        }
+    }
+}

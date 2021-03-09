@@ -1,0 +1,31 @@
+@media screen and (max-width : 1090px) {
+    .shop {
+        &__item {
+            width: 49%;
+            
+            &_wide {
+                width: 100%;
+            }
+        }
+
+        .shop__info {
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width : 600px) {
+    .shop__item {
+        width: 100%;
+    }
+    .shop-menu__item-view {
+        display: none;
+    }
+}
+@media screen and (max-width : 530px) {
+    .shop__item {
+        width: 100%;
+    }
+    .shop__info-title {
+        font-size: 14px;
+    }
+}
