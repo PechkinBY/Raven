@@ -1,4 +1,4 @@
-https://pechkinby.github.io/Raven/
+https://pechkinby.github.io/Raven/dist
 
 # RAVEN
 ## Project structure
